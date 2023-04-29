@@ -6,6 +6,7 @@ public class ImcNovo extends Imc {
         super(peso, altura);
     }
 
+    @Override
     public String classificacao() {
         this.calcularImc();
         if (this.getImc() < 16) return "Magreza grau III";
