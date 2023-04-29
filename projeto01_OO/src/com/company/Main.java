@@ -1,6 +1,7 @@
 package com.company;
 
 import imc.Imc;
+import imc.ImcNovo;
 
 public class Main {
 
@@ -12,8 +13,12 @@ public class Main {
         System.out.println("O IMC é " + imc);
 
          */
-        Imc imc1 = new Imc(80, 1.80);
+        Imc imc1 = new Imc(80, 2.10);
         imc1.calcularImc();
-        System.out.println("O IMC é " + imc1.imc);
+        System.out.println("A classificação é " + imc1.classificacao() + ".");
+
+        Imc imc2 = new ImcNovo(80, 2.10);
+        imc2.calcularImc();
+        System.out.println("A classificação é " + imc2.classificacao() + ".");
     }
 }
