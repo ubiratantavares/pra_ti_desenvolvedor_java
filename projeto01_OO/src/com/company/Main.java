@@ -27,8 +27,5 @@ public class Main {
         imc3.lerAltura();
 
         System.out.println("A classificação é " + imc3.classificacao() + ".");
-
-
-
     }
 }

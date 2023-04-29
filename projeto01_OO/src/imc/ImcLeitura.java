@@ -18,7 +18,7 @@ public class ImcLeitura extends Imc {
 
     public void lerPeso() {
         System.out.println("Entre com o peso: ");
-        this.setPeso(this.lerDouble("Entre com o peso: "));
+        this.setAltura(entrada.nextDouble());
     }
 
     public void lerAltura() {
