@@ -18,7 +18,7 @@ public class ImcLeitura extends Imc {
 
     public void lerPeso() {
         System.out.println("Entre com o peso: ");
-        this.setPeso(entrada.nextDouble());
+        this.setPeso(this.lerDouble("Entre com o peso: "));
     }
 
     public void lerAltura() {
@@ -26,4 +26,18 @@ public class ImcLeitura extends Imc {
         this.setAltura(entrada.nextDouble());
     }
 
+    public double lerDouble(String texto) {
+        boolean continuarLeitura = true;
+        double valor = 0;
+        while (continuarLeitura) {
+            System.out.println(texto);
+            try {
+                valor = Double.parseDouble((entrada.nextLine()));
+                continuarLeitura = false;
+            } catch (NumberFormatException e) {
+                System.out.println("Entrada com valoe inválido.");
+            }
+        }
+        return valor;
+    }
 }
